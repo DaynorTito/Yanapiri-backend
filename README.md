@@ -92,7 +92,7 @@ GEMINI_API_KEY=AIzaSy...tu_clave_real...
 GEMINI_MODEL=gemini-3.1-flash-lite
 GEMINI_TEMPERATURE=0.3
 PROJECT_NAME="FieldShift - Agronomic Copilot API"
-CORS_ORIGINS=["http://localhost:3000","http://127.0.0.1:3000"]
+CORS_ORIGINS=["*"]
 ```
 
 ### 3. Iniciar el Servidor
