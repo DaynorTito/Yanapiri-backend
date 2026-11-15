@@ -1,0 +1,14 @@
+from pydantic import BaseModel, Field
+
+from src.schemas.power import PolygonResponse
+from src.schemas.soil import SoilPolygonResponse
+
+
+class PolygonRecommendationResponse(BaseModel):
+    polygon: PolygonResponse
+    soil: SoilPolygonResponse
+    recommendation: str = Field(description="Evaluación agrícola detallada en Markdown")
+    recommendations: str = Field(
+        description="Recomendaciones prácticas de cultivo y cuidado basadas en los datos"
+    )
+    audio_summary: str = Field(description="Resumen breve en español sencillo, listo para voz")
